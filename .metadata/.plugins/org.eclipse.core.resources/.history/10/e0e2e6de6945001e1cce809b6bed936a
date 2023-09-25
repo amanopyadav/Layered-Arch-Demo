@@ -1,0 +1,14 @@
+package in.mindcraft.controllers;
+
+public class LaptopController {
+	@RequestMapping("/insertlap")
+	public void addLaptop(HttpServlet request, HttpServletResponse response)
+	{
+		int lid = Interger.parseInt(request.getParameter("lid"));
+		String make= request.getParameter("make";)
+				double cost = Double.parseDouble(request.getParameter("cost"));
+		
+		Laptop laptop = new Laptop(lid,make,cost);
+	}
+
+}
